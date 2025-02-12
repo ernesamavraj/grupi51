@@ -42,7 +42,27 @@ else {
         cout<<"---------------------------"<<endl;
      }
 }
-
+//Funksioni per te perditesuar informacionin e nje studenti
+void perditesoStudentin(Student studentet [], int numriStudenteve){
+    int id;
+cout<<"Jepni id-ne e studentit qe deshironi te perditesoni (0 deri ne 4):";
+cin>>id ;
     
+//Kontrollo nese id eshte valid
+if (id >=0 &&  id < numriStudenteve) {
+cout << "Perditesoni informacionin per studentin " <<studentet[id].emri<<endl;
+cout << "Jepni emrin e ri: ";
+cin >> studentet[id].emri;
+
+cout <<"Jepni moshen e re:";
+cin >> studentrt[id[.mosha;
+
+cout<< "Studenti u perditesua me sukses!" << endl;
+}
+else{
+cout << "ID-ja e dhene nuk eshte e vlefshme." <<endl;
+}
+}
+
 
 
