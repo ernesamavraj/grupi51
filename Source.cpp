@@ -77,8 +77,8 @@ cout << "ID-ja e dhene nuk eshte e vlefshme." <<endl;
         do {
             cout << "1.Shto student." << endl;
             cout << "2.Shfaq te gjithe studentet." << endl;
-            cout << "Perditeso informacionin e nje studenti." << endl;
-            cout << "Dil." << endl;
+            cout << "3.Perditeso informacionin e nje studenti." << endl;
+            cout << "0.Dil." << endl;
             cout << "Numri i studenteve te shtuar deri tani: " << numriStudenteve << endl;
             cin >> zgjedhja;
 
