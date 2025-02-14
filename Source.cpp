@@ -42,6 +42,7 @@ else {
         cout<<"---------------------------"<<endl;
      }
 }
+}
 //Funksioni per te perditesuar informacionin e nje studenti
 void perditesoStudentin(Student studentet [], int numriStudenteve){
     int id;
@@ -66,6 +67,42 @@ else{
 cout << "ID-ja e dhene nuk eshte e vlefshme." <<endl;
 }
 }
+    //Funksioni Kryesor
+    int main() {
+        //Krijimi i nje vargu per studentet
+        Student studentet[5];
+        int numriStudenteve = 0;
+        int zgjedhja;
+
+        do {
+            cout << "1.Shto student." << endl;
+            cout << "2.Shfaq te gjithe studentet." << endl;
+            cout << "Perditeso informacionin e nje studenti." << endl;
+            cout << "Dil." << endl;
+            cout << "Numri i studenteve te shtuar deri tani: " << numriStudenteve << endl;
+            cin >> zgjedhja;
+
+            switch (zgjedhja) {
+            case 1:
+                shtoStudentin(studentet, numriStudenteve);
+                break;
+            case 2:
+                shfaqTeGjitheStudentet(studentet, numriStudenteve);
+                break;
+            case 3:
+                perditesoStudentin(studentet, numriStudenteve);
+                break;
+            case 0:
+                cout << "Po dalim nga programi..." << endl;
+                break;
+            default:
+                cout << "Opsion i pavlefshem. Provoni perseri." << endl;
+            }
+        } while (zgjedhja != 0);
+
+        return 0;
+    }
+
 
 
 
